@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" Автогид" - инновационный проект в сфере туризма, объединяющий участников рынка
+    через ИТ. Создаем реестр туристической инфраструктуры, обеспечиваем удобное планирование и бронирование путешествий.
+    Предоставляем информацию об услугах, исторических объектах для привлечения культурного интереса." />
+  <meta name="robots" content="index,follow" />
+  <meta name="keywords"
+    content="Туризм Дагестан, Путешествия в Дагестан, Туры Дагестан, Как поехать в Дагестан, Достопримечательности Дагестана" />
+  <meta property="og:title" content="АвтоГид - гид по Дагестану" />
+  <meta property="og:description" content="" Автогид" - инновационный проект в сфере туризма, объединяющий участников
+    рынка через ИТ. Создаем реестр туристической инфраструктуры, обеспечиваем удобное планирование и бронирование
+    путешествий. Предоставляем информацию об услугах, исторических объектах для привлечения культурного интереса." />
+  <meta property="og:url" content="http://myautoguide.ru" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../static/css/tour/tour.css" />
+  <!-- FONTS -->
+  <link rel="stylesheet" href="../static/fonts/Ubuntu/Ubuntu-Light.ttf" />
+  <link rel="stylesheet" href="../static/css/base/base.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- ФАВИКОН -->
+  <link rel="icon" type="image/x-icon" href="../static/img/favicon_light.ico" id="faviconTag">
+  <link rel="icon" type="image/x-icon" href="../static/img/favicon_dark.ico" id="faviconTag">
+
+  <title>Туры</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header header_mod">
+    <div class="wrapper">
+      <div class="header-box header_main">
+        <div class="logoWrapper logo_main">
+          <div class="logoWrapper logo_main">
+            <a href="./main_page.html">
+            </a>
+          </div>
+          </a>
+        </div>
+
+        <div class="navigation">
+          <button class="burgerBtn">
+            <span class="burgerLine burgerLine_main"></span>
+          </button>
+
+          <nav class="menu">
+            <a href="tour_page.html" class="nav_item nav_link">Туры</a>
+            <a href="main_page.html#aboutUs" class="nav_item nav_link">О нас</a>
+            <a href="main_page.html#galery" class="nav_item nav_link">Галерея</a>
+            <a href="main_page.html#reviews" class="nav_item nav_link">Отзывы</a>
+        </div>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <div class="contant-block">
+        <h2 class="tour-title">Туры по Дагестану</h2>
+        <section class="tour-section">
+          <!--Заголовок-->
+          <div class="filter__open-button">
+            <img src="../static/img/filter-icon.svg" alt="" />
+            <span>Фильтры</span>
+          </div>
+          <aside class="filter-tour">
+            <form method="GET">
+              <div class="filter">
+                <div class="filter-mobile__header">
+                  <h3>Фильтры</h3>
+                  <span class="filter__close-button">×</span>
+                </div>
+
+                <div class="duration filter__item">
+                  <div class="duration__title filter__title">
+                    Длительность
+                    <div class="filter__icon">
+                      <svg class="filter__svg svg1" width="28" height="11" viewBox="0 0 28 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"></svg>
+                    </div>
+                  </div>
+                  <div class="duration__value-box filter__value-box">
+                    <div class="duration__bounding-box filter__bounding-box">
+                      <div class="duration__input-box_left filter__input-box filter__input-box_left">
+                        <label for="dur-day">От (Дней)</label>
+                        <input class="duration__input-left input-area" id="duration-min" type="text" />
+                      </div>
+                      <div class="duration__input-box_right filter__input-box filter__input-box_right">
+                        <label for="dur-day">До (Дней)</label>
+                        <input class="duration__input-right input-area" id="duration-max" type="text" />
+                      </div>
+                    </div>
+                    <div class="filter__range">
+                      <input type="range" min="1" max="15" class="slider" id="range-left" data-name="day" />
+                      <input type="range" min="2" max="16" class="slider" id="range-right" />
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="filter-hr">
+
+                <div class="price filter__item">
+                  <div class="price__title filter__title">
+                    Цена
+                    <div class="filter__icon">
+                      <svg class="filter__svg svg2" width="28" height="11" viewBox="0 0 28 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"></svg>
+                    </div>
+                  </div>
+                  <div class="price__value-box filter__value-box">
+                    <div class="price__bounding-box filter__bounding-box">
+                      <div class="price__input-box_left filter__input-box filter__input-box_left">
+                        <label for="price-min">От</label>
+                        <input class="price__input-left input-area" id="price-min" name="min_price" type="text" />
+                      </div>
+                      <div class="price__input-box_right filter__input-box filter__input-box_right">
+                        <label for="price-max">До</label>
+                        <input class="price__input-right input-area" id="price-max" name="max_price" type="text" />
+                      </div>
+                    </div>
+                    <div class="filter__range">
+                      <input type="range" min="1" max="50000" class="slider" id="range-left" data-name="price"
+                        name="min_price_range" />
+                      <input type="range" min="50001" max="100000" class="slider" id="range-right"
+                        name="max_price_range" />
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" value="Применить" class="filter__apply-button submit_button" />
+              </div>
+            </form>
+          </aside>
+
+          <div class="tour-section__list">
+            <!--Карточка 1-->
+            <div class="card-tour" data-load="card">
+              <div class="card-tour__slider-box">
+                <!-- <div class="card-tour__slider-arrow">
+                    <div class="slider-arrow slider-arrow__left"></div>
+                    <div class="slider-arrow slider-arrow__right"></div>
+                  </div> -->
+                <swiper-container class="card-tour__image" navigation="true" pagination="true"
+                  data-length="{{ images |length }}">
+                  <swiper-slide lazy="true"><img loading="lazy" src="../static/img/tours/tour_6_2.jpg" alt="Горы"
+                      class="card-tour__img" /></swiper-slide>
+                </swiper-container>
+              </div>
+              <div class="card-tour__contant">
+                <div class="card-tour__text">
+                  <h3 class="card-tour__title">Хунзах/Матлас/Мочохское озеро</h3>
+                  <p class="card-tour__description">
+                    Этот тур включает посещение горного селения Хунзах, Хунзахского плато, плато Матлас и Мочохского
+                    озера. Вы увидите красивые ландшафты, водопады, минеральные источники, народные промыслы и озеро,
+                    образовавшееся в результате оползня. В рамках тура также посещаются Гимринский тоннель, Гимринская
+                    башня, Ирганайское водохранилище, Матласское ущелье и мемориальный комплекс "Белые журавли".
+                    Стоимость тура включает транспорт, гида и обед. Рекомендуется брать удобную обувь, теплую одежду и
+                    солнцезащитные очки.
+                  </p>
+                </div>
+                <div class="card-tour__buttons">
+                  <div class="card__price">Цена: </div>
+                  <div class="card__price">3500₽</div>
+                  <a href="./Hunzah.html" class="card-tour__btn-more button">Подробнее
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--Карточка 2-->
+            <div class="card-tour" data-load="card">
+              <div class="card-tour__slider-box">
+                <!-- <div class="card-tour__slider-arrow">
+                    <div class="slider-arrow slider-arrow__left"></div>
+                    <div class="slider-arrow slider-arrow__right"></div>
+                  </div> -->
+                <swiper-container class="card-tour__image" navigation="true" pagination="true"
+                  data-length="{{ images |length }}">
+                  <swiper-slide lazy="true"><img loading="lazy" src="../static/img/tours/tour_1_1.jpg" alt="Горы"
+                      class="card-tour__img" /></swiper-slide>
+                </swiper-container>
+              </div>
+              <div class="card-tour__contant">
+                <div class="card-tour__text">
+                  <h3 class="card-tour__title">Дагестан: <br>Большое путешествие</h3>
+                  <p class="card-tour__description">
+                    Этот тур включает в себя посещение Сулакского каньона, Бархана Сарыкум, Салтинского подземного
+                    водопада и Экроплана Лунь в Дагестане. Сулакский каньон – это глубочайший каньон в Европе, Бархан
+                    Сарыкум – удивительный песчаный массив, Салтинский водопад – подземный водопад с пещерой, а Экроплан
+                    Лунь – остатки экранированного самолёта. Тур включает трансфер, гида, завтрак и ланч, а также
+                    страховку. Требуется хорошая физическая подготовка, тёплая одежда и обувь, солнцезащитные очки, крем
+                    и каска. Длительность тура – 4 дня / 3 ночи. Рекомендуется взять с собой воду и запас еды.
+                  </p>
+                </div>
+                <div class="card-tour__buttons">
+                  <div class="card__price">Цена: </div>
+                  <div class="card__price">37900₽</div>
+                  <a href="./BigTravelTour.html" class="card-tour__btn-more button">Подробнее
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--Карточка 3-->
+            <div class="card-tour" data-load="card">
+              <div class="card-tour__slider-box">
+                <!-- <div class="card-tour__slider-arrow">
+                    <div class="slider-arrow slider-arrow__left"></div>
+                    <div class="slider-arrow slider-arrow__right"></div>
+                  </div> -->
+                <swiper-container class="card-tour__image" navigation="true" pagination="true"
+                  data-length="{{ images |length }}">
+                  <swiper-slide lazy="true"><img loading="lazy" src="../static/img/tours/tour_2_3.jpg" alt="Горы"
+                      class="card-tour__img" /></swiper-slide>
+                </swiper-container>
+              </div>
+              <div class="card-tour__contant">
+                <div class="card-tour__text">
+                  <h3 class="card-tour__title">Дагестан: <br>По тропам предков</h3>
+                  <p class="card-tour__description">
+                    Этот тур включает в себя посещение Гимринского туннеля, храма Датуна, Тоботского водопада и комплекса Ахульго в Дагестане. Тур включает трансфер, гида, завтрак и ланч, а также страховку. Требуется хорошая физическая подготовка, тёплая одежда и обувь, солнцезащитные очки, крем и каска. Длительность тура – 2 дня / 1 ночь. Рекомендуется взять с собой воду и запас еды.
+                  </p>
+                </div>
+                <div class="card-tour__buttons">
+                  <div class="card__price">Цена: </div>
+                  <div class="card__price">35900₽</div>
+                  <a href="./AncestorsTour.html" class="card-tour__btn-more button">Подробнее
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-tour" data-load="card">
+              <div class="card-tour__slider-box">
+                <!-- <div class="card-tour__slider-arrow">
+                    <div class="slider-arrow slider-arrow__left"></div>
+                    <div class="slider-arrow slider-arrow__right"></div>
+                  </div> -->
+                <swiper-container class="card-tour__image" navigation="true" pagination="true"
+                  data-length="{{ images |length }}">
+                  <swiper-slide lazy="true"><img loading="lazy" src="../static/img/tours/tour_3_1.jpg" alt="Горы"
+                      class="card-tour__img" /></swiper-slide>
+                </swiper-container>
+              </div>
+              <div class="card-tour__contant">
+                <div class="card-tour__text">
+                  <h3 class="card-tour__title">Легенды юга Дагестана</h3>
+                  <p class="card-tour__description">
+                    Этот тур включает в себя посещение Дербента, Нарын-Калы, Кубачи и Гамсутля в Дагестане. Предлагается трансфер, гид, завтрак и ланч, а также страховка. Рекомендуется взять с собой тёмую одежду и обувь, солнцезащитные очки, крем и камеру. Уровень сложности тура – низкий. Длительность тура – 1 день.
+                  </p>
+                </div>
+                <div class="card-tour__buttons">
+                  <div class="card__price">Цена: </div>
+                  <div class="card__price">32900₽</div>
+                  <a href="./AncestorsTour.html" class="card-tour__btn-more button">Подробнее
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer__wrapper">
+    <div class="footer">
+      <div class="project_name footer__block">
+        <div class="footer__title">
+          <div class="logoWrapper logo_main">
+            <a href="./main_page.html">
+            </a>
+          </div>
+        </div>
+        <p class="about_project">
+          Добро пожаловать в мир путешествий и приключений! Мы рады приветствовать вас на нашем сайте, посвященному
+          туризму. <br>
+          Наша цель - помочь вам создать незабываемые
+          впечатления и открыть для себя удвительные места по всей республике.
+        </p>
+      </div>
+
+      <div class="footer__nav__wrapper footer__block">
+        <h3 class="footer__title">навигация</h3>
+        <div class="footer__nav">
+          <a href="tour_page.html" class="footer__nav_link">Туры</a>
+          <a href="main_page.html#aboutUs" class="footer__nav_link">О нас</a>
+          <a href="main_page.html#galery" class="footer__nav_link">Галерея</a>
+          <a href="main_page.html#reviews" class="footer__nav_link">Отзывы</a>
+        </div>
+      </div>
+
+      <div class="footer__contacts__wrapper footer__block">
+        <h3 class="footer__title">контакты</h3>
+        <div class="footer__contacts">
+          <div class="footer__contact__item">
+            <img src="../static/img/main-icon.svg" alt="" />
+            <a href="mailto:example@mail.ru"
+              style="text-decoration: none; color: black;"><span>example@mail.ru</span></a>
+          </div>
+
+          <div class="footer__contact__item">
+            <img src="../static/img/whatsapp-icon.svg" alt="" />
+            <a href="https://api.whatsapp.com/send?phone="
+              style="text-decoration: none; color: black;"><span>Whatsapp</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Кнопка для перехожа в начало страницы -->
+  <div class="btn-up btn-up_hide"></div>
+  <!-- </div> -->
+
+  <script src="../static/js/main.js"></script>
+  <script type="module" src="../static/js/base.js"></script>
+  <!-- <script type="module" src="../static/js/lazyLoading.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script>
+    const faviconTag = document.getElementById("faviconTag");
+    const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const changeFavicon = () => {
+      if (isDark.matches) faviconTag.href = "/app/static/img/favicon_light.ico";
+      else faviconTag.href = "/app/static/img/favicon_dark.ico";
+    };
+
+    changeFavicon();
+
+    setInterval(changeFavicon, 1000)
+  </script>
+  <script src="../static/js/tours.js"></script>
+  <script src="../static/js/animations.js"></script>
+  <script src="../static/js/filter.js"></script>
+</body>
+
+</html>
