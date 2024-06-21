@@ -69,7 +69,7 @@ body {
 } */
 
 .logo_main a {
-  background-image: url("../img/font-awesome-logo-full-svgrepo-com.svg") !important;
+  background-image: url("../img/logo.png") !important;
   padding: 80px !important;
   transition: padding .2s ;
 }
